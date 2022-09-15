@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import './index.css'
 
-function App() {
+export default function App() {
+
+  // const switchCircle = [switchCircle, setSwitchCircle] = setState('-5px');
+
+  let num = .01;
+  
+  const renderSwitchCircle = () => {
+    num = num + .01;
+  //  return setSwitchCircle(num + 'px')
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container font-face-in" id="drum-machine">
+      <div id="display">
+        <div className='row-1'>
+          <button className='drum-pad' id='q'>Q</button>
+          <button className='drum-pad' id='w'>W</button>
+          <button className='drum-pad' id='e'>E</button>
+        </div>
+        <div className='row-2'>
+          <button className='drum-pad' id='a'>A</button>
+          <button className='drum-pad' id='s'>S</button>
+          <button className='drum-pad' id='d'>D</button>
+        </div>
+        <div className='row-3'>
+          <button className='drum-pad' id='z'>Z</button>
+          <button className='drum-pad' id='x'>X</button>
+          <button className='drum-pad' id='c'>C</button>
+        </div>
+        <button id="switch">
+          <div id="switch-circle"></div>
+        </button>
+      </div>
     </div>
   );
 }
-
-export default App;
