@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+    url('/src/fonts/inter-web/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: local('Inter'),
+    url('/src/fonts/inter-web/Inter-Black.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Sigma-RM';
+    src: local('Sigma-RM'),
+    url('/src/fonts/sigma-rm/Sigma-RM.woff') format('woff');
+}
